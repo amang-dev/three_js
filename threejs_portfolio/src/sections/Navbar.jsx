@@ -1,11 +1,20 @@
 import React, { useState } from "react";
+import { navLinks } from "../constants/index.js";
 
 const NavItems = () => {
-  return(
+  return (
     <ul className="nav-ul">
-
+      {navLinks.map(({ id, href, name }) => {
+        return (
+          <li key={id} className="nav-li">
+            <a href={href} className="nav-li_a" onClick={() => {}}>
+              {name}
+            </a>
+          </li>
+        );
+      })}
     </ul>
-  )
+  );
 };
 
 const Navbar = () => {
@@ -41,6 +50,16 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
+
+      <div
+        className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}
+      >
+
+        <nav className="p-5"> 
+          <NavItems />
+        </nav>
+      </div>
+
     </header>
   );
 };
