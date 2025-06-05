@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -42,7 +42,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid2.png"
+              src="/assets/grid222.png"
               alt="grid-2"
               className="w-full sm:w-[276px] h-fit object-contain"
             />
@@ -50,7 +50,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in React/Javascript with a focus on Three js
+                I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications
+
               </p>
             </div>
           </div>
@@ -81,11 +82,11 @@ const About = () => {
             </div>
 
             <div>
-              <p className="grid-headText">
-                I am Availbale to work in Noida, Gurugram and Delhi
+              <p className="grid-headtext">
+                I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-                I am Based in Delhi, Available to work Remotly.
+                I&apos;m based in Delhi, India and open to remote work worldwide.
               </p>
 
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
@@ -102,10 +103,9 @@ const About = () => {
             />
 
             <div>
-              <p className="grid-headtext">my passion for coding</p>
+              <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                i am love solving problem and building things through code.
-                coding isn't just my professsion it is my passion
+                I love solving problems and building things through code. Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, and enhancing my skills.
               </p>
             </div>
           </div>
